@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layots</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        header{
+            background-color: #FE77FF;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #ead186;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: silver;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: aqua;
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media(max-width: 600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>nyan cat </h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/search?q=nyan+cat&rlz=1C1CHBF_esMX1044MX1044&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjQ2vTNpIf9AhWQmWoFHXjkBwgQ_AUoAXoECAEQAw&biw=1366&bih=657&dpr=1#imgrc=XvnP-x7MaI3mQM">imagenes</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Nyan_Cat" >informacion</a></li>
+                
+            </ul>
+        </nav>
+        <article>
+            <h2>resum </h2>
+            <p>
+                Nyan Cat es un gato con cuerpo de poptart. Le gusta cantar y viajar por el espacio. También le gusta los arcoiris y los dulces.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum nulla voluptatum animi consequuntur, enim facilis ducimus explicabo, neque facere quisquam aliquid. Officiis velit voluptatibus quos ad, nulla numquam quibusdam.
+            </p>
+
+        </article>
+    </section>
+    <footer>
+        <p>nyancat &copy; 2023</p>
+    </footer>
+
+    <div style="background-color: red;border: 2px solid black; width: 100&%;">
+        alumno: Oscar León Sánchez fecha:08/02/23 - &copy; 2023-oscar.leon21@cetis107.edu.mx
+    </div>
+</body>
+</html>
