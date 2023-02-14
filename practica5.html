@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios HTML</title>
+</head>
+<body>
+    <h1>Formulatio HTML</h1>
+    <label for="Nombre">Nombre</label>
+    <input type="text" placeholder="Escribe Tu Nombre" required><br><br>
+
+    <input type="radio"  required>Masculino
+    <input type="radio"  required>Femenino<br><br>
+    
+    <label for="Edad">Edad</label>
+    <input type="number" placeholder="Escribe Tu Edad" required><br><br>
+
+    <label for="Nacimiento">Fecha de Nacimiento</label>
+    <input type="date" placeholder="Escribe Tu Fecha" required><br><br>
+    
+    <label for="Direccion">Direccion</label><br>
+    <textarea name="direccion" id="" cols="30" rows="10" placeholder="teclea tu direccion"></textarea><br><br>
+
+    <label for="Escuela">Escuela</label>
+    <select name="escuela" id="">
+    <option value="">selecciona una escuela</option>
+    <option value="cetis">CETIS 107</option>
+    <option value="cbetis">Cbetis 224</option>
+    <option value="otra">Otra</option>
+    </select><br><br>
+
+    <label for="Materia">Materias cursadas</label><br>
+    <input type="checkbox" name="Materias[]">Fisica <br><br>
+    <input type="checkbox" name="Materias[]">Calculo Diferencial<br><br>
+    <input type="checkbox" name="Materias[]">Inglés</s><br><br>
+    <input type="checkbox" name="Materias[]">Programacion Web<br><br>
+    <input type="checkbox" name="Materias[]">Ecología<br><br>
+
+    <label for="Color">Color Preferido</label>
+    <input type="color" required><br><br>
+
+    <label for="Imagen_Perfil"><b>Imagen De Perfil</b></label><br>
+    <input type="file" accept="png/jpg"><br><br>
+
+    <input type="submit" value="Guardar Alumno"><br><br><br>
+
+</a>
+<div style="background-color: red;border: 2px solid black; width: 50%;">
+    alumno: Oscar León Sánchez fecha:08/02/23 - &copy; 2023-oscar.leon21@cetis107.edu.mx
+</div>
+
+</body>
+</html>
