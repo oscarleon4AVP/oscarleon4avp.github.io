@@ -1,0 +1,111 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peliculas HTML</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+      body{
+        background-color: #ee2222;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color: #ffffff;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">compendio peliculas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">repertorio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">top categorias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                      encuesta
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">encuesta de peliculas </h5>
+                      <p class="card-text">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" placeholder="Escribe el Nombre de la pelicula" required><br><br>
+                    
+                        
+                        <label for="sinopsis">sinopsis</label>
+                        <input type="text" placeholder="escribe la sinopsis" required><br><br>
+                    
+                        <label for="Estreno">Fecha de Estreno</label>
+                        <input type="date" placeholder="Escribe La Fecha de Estreno" required><br><br>
+                        
+                        <label for="Escuela">Escuela</label>
+                        <select name="escuela" id="">
+                        <option value="">selecciona una escuela</option>
+                        <option value="cetis">CETIS 107</option>
+                        <option value="cbetis">Cbetis 224</option>
+                        <option value="otra">Otra</option>
+                        </select><br><br>
+                    
+                        <label for="genero">genero</label><br>
+                        <input type="checkbox" name="Materias[]">ciencie-ficcion<br><br>
+                        <input type="checkbox" name="Materias[]">terror<br><br>
+                        <input type="checkbox" name="Materias[]">comedia</s><br><br>
+                        <input type="checkbox" name="Materias[]">suspenso<br><br>
+                        <input type="checkbox" name="Materias[]">drama<br><br>
+                    
+                        
+                    
+                        
+                    
+                        <input type="submit" value="enviar"> 
+                        <input type="submit" value="cancelar">
+                      </p>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom text-center p-2 card">
+        alumno: Oscar León Sánchez fecha:12/05/23 - &copy; 2023-oscar.leon21@cetis107.edu.mx
+    </footer>
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
