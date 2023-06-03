@@ -22,7 +22,7 @@
     if($pregunta1 == "c"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -33,7 +33,7 @@
     if($pregunta2 == "b"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -44,7 +44,7 @@
     if($pregunta3 == "a"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -55,7 +55,7 @@
     if($pregunta4 == "b"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -66,7 +66,7 @@
     if($pregunta5 == "c"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -77,7 +77,7 @@
     if($pregunta6 == "6"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -88,7 +88,7 @@
     if($pregunta7 == "a"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -96,10 +96,10 @@
 
     echo "<h3>pregunta 8: respuest (".$pregunta8.") </h3>";
 
-    if($pregunta8 == ""){
+    if($pregunta8 == "c"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -107,10 +107,10 @@
 
     echo "<h3>pregunta 9: respuest (".$pregunta9.") </h3>";
 
-    if($pregunta9 == ""){
+    if($pregunta9 == "b"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -118,10 +118,10 @@
 
     echo "<h3>pregunta 10: respuest (".$pregunta10.") </h3>";
 
-    if($pregunta10 == ""){
+    if($pregunta10 == "a"){
         $calificaion ++;
         echo "<p> Respuesta correcta </p>";
-        echo "<img src='correcto.png' width='4% '>";
+        echo "<img src='correcto.png' width='4% '> <hr>";
     }else{
         echo "<p> Respuesta incorrecta </p>";
         echo "<img src='error.png' width='4%'><hr>";
@@ -131,7 +131,14 @@
 
 
     if($calificaion <= 0 && $calificaion <=5){
-        echo "<h3> reprobaste </h3>";
-        echo "<img src='' width=' '><hr>";
+        echo "<h1>tu calificacion:</h1>";
+        echo "$calificaion";
+        echo "<h1> reprobaste </h1>";
+        echo "<img src='reprobado.webp' width='9%'><hr>";
+    }else{
+        echo "<h1>tu calificacion:</h1>";
+        echo "$calificaion";
+        echo "<h1> aprobaste </h1>";
+        echo "<img src='aprobado.png' width='9%'><hr>";
     }
 ?>
