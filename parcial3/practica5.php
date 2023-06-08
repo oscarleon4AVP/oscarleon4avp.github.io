@@ -1,13 +1,12 @@
 <?php
 
     $cuadros = $_POST["cuadro"];
-
-    /*var_dump($cuadros);*/
+    
 
     for($i=0; $i<count($cuadros); $i++){
-        echo $cuadros[i]. ",";
-        if ($cuadros[i] != "X" && $cuadros[i] != "O") {
-            echo "<h2>solo se permite x y/o O </h2>";
+
+        if ($cuadros[$i] != "X" && $cuadros[$i] != "O") {
+            echo "<h2>solo se permite x y/o O</h2>";
             return;
         }
     }
@@ -107,6 +106,21 @@
         echo "<h1>Ganador [O]</h1>";
         return;
     }
-    
 
+    /*
+    echo "<h1>";
+    for ($i = 0; $i < 9; $i ++){
+        $cuadros = $cuadros[$i];
+        if ($ && in_array($i, $cuadros)) {
+            echo "<span style='color: green;'>[$cuadros]</span>";
+        }else {
+            echo "[$cuadros]";
+        }
+        if($i == 2 && $i == 5) {
+            echo "<br>";
+        }
+    }
+    echo "</h1>";
+    */
+   
 ?>
