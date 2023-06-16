@@ -35,8 +35,6 @@
 <body>
     <div class="container">
         <h1>Serpientes y Escaleras</h1>
-        <form action="practica7.php" method="post">
-        <input type="submit" value="jugador" class="btn btn-succes"><hr>
         <div class="row">
             <?php
             $colors = ['rojo', 'amarillo', 'verde', 'azul', 'morado'];
@@ -85,8 +83,5 @@
             ?>
         </div>
     </div>
-        </form>
-        
 </body>
 </html>
-
