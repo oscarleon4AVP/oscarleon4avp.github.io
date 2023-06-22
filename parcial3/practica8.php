@@ -63,6 +63,7 @@
                         <?php
                             //pintar carta 1
                             for($i=0; $i<16; $i++){
+                                if(array)
                                 $numero = rand(1,54);
                                 echo "<div class='col-3 p-0'><img src='fotos_loteria/".$cartilla1[$i].".jpeg' class='img-thumbnail'></div>";
                                 echo "<input type='hidden' name='cartilla1[]' value='". $cartilla1[$i] ."'>";
