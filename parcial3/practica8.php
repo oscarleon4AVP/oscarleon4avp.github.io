@@ -26,10 +26,8 @@
                 $cartilla1 = $_POST["cartilla1"];
                 $cartilla2 = $_POST["cartilla2"];
                 //logica
-                /*$carta = rand(1,54);
-                $cartas_dadas = [];
-                array_push($cartas_dadas, $carta);
-*/
+                $carta = rand(1,54);
+                echo "<h2>carta dada <img src='fotos_loteria/".$carta.".jpeg' class='img-fluid' width='100px'></h2>";
 
             }else{
                 $cartilla1 = [];
@@ -63,8 +61,6 @@
                         <?php
                             //pintar carta 1
                             for($i=0; $i<16; $i++){
-                                if(array)
-                                $numero = rand(1,54);
                                 echo "<div class='col-3 p-0'><img src='fotos_loteria/".$cartilla1[$i].".jpeg' class='img-thumbnail'></div>";
                                 echo "<input type='hidden' name='cartilla1[]' value='". $cartilla1[$i] ."'>";
                             }
